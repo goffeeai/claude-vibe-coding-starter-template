@@ -1,65 +1,67 @@
 ---
 name: find-skills
-description: ค้นหาและติดตั้ง Agent Skills จาก skills.sh
+description: ติดตั้งและใช้งาน find-skills จาก skills.sh
 user-invocable: true
 ---
 
 # Find Skills - ค้นหา Agent Skills
 
+> Credit: [skills.sh](https://skills.sh) by Vercel Labs
+
 ## เมื่อ user พิมพ์ /find-skills
 
-### ขั้นตอนที่ 1: ถาม user ว่าต้องการอะไร
+### ขั้นตอนที่ 1: ตรวจสอบว่าติดตั้ง find-skills หรือยัง
 
-ถามว่า:
-- ต้องการ skill เกี่ยวกับอะไร?
-- หรือต้องการดู skill ยอดนิยม?
+ตรวจสอบว่ามีโฟลเดอร์ `.agents/skills/find-skills/` หรือไฟล์ที่เกี่ยวข้องหรือไม่
 
-### ขั้นตอนที่ 2: ค้นหา skill
+**ถ้ายังไม่มี:**
+```bash
+npx skills add vercel-labs/skills/find-skills
+```
 
-**ถ้า user บอกว่าต้องการอะไร:**
+เลือก options:
+- Agent: เลือกตาม IDE ที่ user ใช้ (Claude Code, Cursor, Windsurf, etc.)
+- Scope: Current directory (recommended)
+- Method: Symlink (recommended)
+
+**ถ้ามีแล้ว:** ข้ามไปขั้นตอนที่ 2
+
+---
+
+### ขั้นตอนที่ 2: ถาม user ว่าต้องการค้นหาอะไร
+
+ถาม: "ต้องการค้นหา skill เกี่ยวกับอะไร?"
+
+ตัวอย่าง:
+- React performance
+- Testing
+- TypeScript
+- Database
+- UI/UX design
+
+---
+
+### ขั้นตอนที่ 3: ค้นหาด้วย find-skills
+
+ใช้คำสั่ง:
 ```bash
 npx skills find [keyword]
 ```
 
-ตัวอย่าง:
-- "React performance" → `npx skills find react performance`
-- "testing" → `npx skills find testing`
-- "SEO" → `npx skills find seo`
+หรือถ้าติดตั้ง find-skills แล้ว AI จะค้นหาให้อัตโนมัติ
 
-**ถ้า user อยากดู skill ยอดนิยม:**
+---
 
-แนะนำ Top 10 จาก skills.sh:
+### ขั้นตอนที่ 4: ช่วยติดตั้ง skill ที่เลือก
 
-| Skill | ประโยชน์ | ติดตั้ง |
-|-------|---------|---------|
-| `vercel-labs/skills/find-skills` | ค้นหา skills อัตโนมัติ | `npx skills add vercel-labs/skills/find-skills` |
-| `vercel/vercel-react-best-practices` | React/Next.js optimization | `npx skills add vercel/vercel-react-best-practices` |
-| `ibelick/web-design-guidelines` | Web design patterns | `npx skills add ibelick/web-design-guidelines` |
-| `remotion-dev/remotion-best-practices` | Video library | `npx skills add remotion-dev/remotion-best-practices` |
-| `ibelick/frontend-design` | UI/UX guidance | `npx skills add ibelick/frontend-design` |
-
-### ขั้นตอนที่ 3: ช่วยติดตั้ง
-
-เมื่อ user เลือก skill แล้ว ช่วยรันคำสั่ง:
-
+เมื่อ user เลือก skill แล้ว:
 ```bash
 npx skills add <owner/repo>
 ```
 
-Options:
-- `-g` หรือ `--global` = ติดตั้งแบบ global (ใช้ได้ทุก project)
-- `-y` หรือ `--yes` = ไม่ต้องถามยืนยัน
-
-### ขั้นตอนที่ 4: อธิบายการใช้งาน
-
-หลังติดตั้งเสร็จ:
-1. บอก user ว่า skill ถูกติดตั้งที่ไหน (`.agents/` folder)
-2. อธิบายวิธีใช้ skill ที่ติดตั้ง
-3. แนะนำให้ลองใช้งานทันที
-
 ---
 
-## Quick Commands
+## Quick Reference
 
 ```bash
 # ค้นหา skill
@@ -67,9 +69,6 @@ npx skills find [keyword]
 
 # ติดตั้ง skill
 npx skills add <owner/repo>
-
-# ติดตั้งแบบ global
-npx skills add -g <owner/repo>
 
 # ดู skills ที่ติดตั้งแล้ว
 npx skills list
@@ -80,15 +79,14 @@ npx skills update
 
 ---
 
-## แนะนำ: ติดตั้ง find-skills skill
+## Skills ยอดนิยม
 
-ถ้า user ยังไม่มี find-skills skill จาก Vercel แนะนำให้ติดตั้ง:
-
-```bash
-npx skills add vercel-labs/skills/find-skills
-```
-
-ประโยชน์: หลังติดตั้งแล้ว AI จะค้นหา skills ให้อัตโนมัติเมื่อถามว่า "มี skill สำหรับ X ไหม?"
+| Skill | ติดตั้ง |
+|-------|---------|
+| React/Next.js optimization | `npx skills add vercel/vercel-react-best-practices` |
+| Web design patterns | `npx skills add ibelick/web-design-guidelines` |
+| Frontend UI/UX | `npx skills add ibelick/frontend-design` |
+| TypeScript best practices | `npx skills find typescript` |
 
 ---
 
