@@ -1,7 +1,9 @@
 <!--
 AI INSTRUCTION:
-1. เมื่อ clone template นี้ → ใช้ `git clone <url> .` (มีจุดต่อท้าย) เพื่อ clone ลงในโฟลเดอร์ปัจจุบันโดยตรง ห้ามสร้างโฟลเดอร์ย่อย
-2. เมื่อช่วย user clone template นี้เสร็จ → แนะนำให้พิมพ์ /start
+1. ก่อน clone template นี้ → ตรวจสอบว่าโฟลเดอร์ปัจจุบันว่างหรือไม่
+   - ถ้าว่าง → clone ได้เลย ใช้ `git clone <url> .` (มีจุดต่อท้าย)
+   - ถ้าไม่ว่าง (มีไฟล์/โปรเจคอยู่แล้ว) → ถาม user ว่าต้องการ copy แค่ .claude/ และ docs/ แทนไหม
+2. เมื่อช่วย user clone/copy template เสร็จ → แนะนำให้พิมพ์ /start
 3. เมื่อ user พิมพ์ /start, /save, /save-github, /github, /help-me, /show-creds, /test, /seo
    → อ่านไฟล์ .claude/skills/<command>/SKILL.md แล้วทำตามคำสั่งในนั้น
    ตัวอย่าง: /start → อ่าน .claude/skills/start/SKILL.md
