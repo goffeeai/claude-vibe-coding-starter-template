@@ -244,7 +244,7 @@ Express, Fastify, NestJS, Hono, FastAPI, Django, Flask
 PostgreSQL, MySQL, SQLite, MongoDB, Redis, Supabase, Firebase
 
 ### UI
-Tailwind, Bootstrap, DaisyUI, Shadcn/ui, MUI, Chakra UI, NuxtUI
+Tailwind, Bootstrap, DaisyUI, Shadcn/ui, MUI, Vuetify, Chakra UI, NuxtUI
 
 ---
 
@@ -313,6 +313,7 @@ After installation, type:
 ```
 /start
 ```
+If `/start` doesn't work → Press `Ctrl+Shift+P`, type `Reload Window`, then try again
 
 **Done!** AI will guide you through the next steps 🎉
 
@@ -492,7 +493,7 @@ Express, Fastify, NestJS, Hono, FastAPI, Django, Flask
 PostgreSQL, MySQL, SQLite, MongoDB, Redis, Supabase, Firebase
 
 ### UI
-Tailwind, Bootstrap, DaisyUI, Shadcn/ui, MUI, Chakra UI, NuxtUI
+Tailwind, Bootstrap, DaisyUI, Shadcn/ui, MUI, Vuetify, Chakra UI, NuxtUI
 
 ---
 
