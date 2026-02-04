@@ -1,7 +1,7 @@
 # 🚀 Claude Vibe Coding Starter Template
 
 ![Claude](https://img.shields.io/badge/Claude-Ready-blue)
-![Skills](https://img.shields.io/badge/Skills-8-orange)
+![Skills](https://img.shields.io/badge/Skills-9-orange)
 ![Stack](https://img.shields.io/badge/Tech_Stack-50+-purple)
 ![PRD](https://img.shields.io/badge/PRD-Included-green)
 ![Rules](https://img.shields.io/badge/Rules-64-red)
@@ -62,6 +62,7 @@ Copy ไปวางได้เลย
 | `/help-me` | 🆘 ติดปัญหา ต้องการความช่วยเหลือ |
 | `/show-creds` | 🔑 ดู credentials ของโปรเจค |
 | `/seo` | 🔍 **SEO Expert Mode** - สร้างหน้าเว็บที่ติด Google และ AI เข้าใจ |
+| `/find-skills` | 🔎 **ค้นหา Skills** - ค้นหาและติดตั้ง Agent Skills จาก skills.sh |
 
 ---
 
@@ -321,6 +322,7 @@ If `/start` doesn't work → Press `Ctrl+Shift+P`, type `Reload Window`, then tr
 | `/help-me` | 🆘 Stuck, need help |
 | `/show-creds` | 🔑 View project credentials |
 | `/seo` | 🔍 **SEO Expert Mode** - Create SEO-friendly pages for Google and AI |
+| `/find-skills` | 🔎 **Find Skills** - Discover and install Agent Skills from skills.sh |
 
 ---
 
