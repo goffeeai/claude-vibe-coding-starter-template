@@ -30,18 +30,13 @@
 
 ### 2. ติดตั้ง Template
 
-เริ่มทำโปรเจคใหม่ Copy ไปวางได้เลย
+Copy ไปวางได้เลย
 ```
 ช่วย clone https://github.com/goffeeai/claude-vibe-coding-starter-template
 มาที่โปรเจคนี้ให้หน่อย
 ```
 
-กรณี มีโปรเจคอยู่แล้วอยากทำต่อ ให้ใช้อันนี้
-```
-ช่วย copy .claude/ และ docs/ จาก
-https://github.com/goffeeai/claude-vibe-coding-starter-template
-มาที่โปรเจคนี้ให้หน่อย
-```
+> 💡 ถ้ามีโปรเจคอยู่แล้ว AI จะถามก่อนแล้ว copy เฉพาะ `.claude/` และ `docs/` ให้
 
 ### 3. เริ่มใช้งาน
 
@@ -297,15 +292,10 @@ Supports: **Windows**, **macOS**, **Linux**
 Tell AI:
 ```
 Please clone https://github.com/goffeeai/claude-vibe-coding-starter-template
-directly into this folder (don't create a subfolder)
-```
-
-Or if you already have a project:
-```
-Please copy .claude/ and docs/ from
-https://github.com/goffeeai/claude-vibe-coding-starter-template
 to this project
 ```
+
+> 💡 If you already have a project, AI will ask first and copy only `.claude/` and `docs/`
 
 ### 3. Start Using
 
